@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+html, body{
+    line-height: 1.5;
+    font-weight: 300px;
+}
+.hero_section{
+    background-image: url(img/developer.png);
+    min-height: 100vh;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.text_container{
+    color: white;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 64px 0 0 16px;
+}
+.lg_text{
+    font-size: 62px;
+    font-weight: 400;
+}
+h1{
+    text-transform: uppercase;
+}
+.black_box{
+    background-color: black;
+    padding: 50px;
+}
+.black_box h2{
+    color: white;
+    font-weight: 300;
+    text-align: center;
+    font-size: 72px;
+    
+}
+
+.black_box h2 span{
+    font-size: 96px;
+    font-weight: 400;
+}
+.work{
+    display: grid;
+    grid-template-columns: repeat(3, 320px);
+    justify-content:space-evenly;
+    margin: 20px 0;
+}
+.card{
+    max-width: 320px;
+    height: 370px;
+    border-radius: 10px;
+    box-shadow: 3px 5px 5px rgba(1, 1, 1, 0.2) ;
+    transition: 0.3s;
+}
+.card:hover{
+    transform: scale(1.04);
+}
+
+.card_container{
+    padding: 10px 20px;
+}
+.card_container h3{
+    margin-bottom: 10px;
+}
+.bottom_setion{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+.contact{
+    background-color: #515603;
+}
+.about{
+    background-color: #722300;
+}
+.contact, .about{
+    min-height: 300px;
+    padding: 32px;
+    color: white;
+}
+.bottom_setion h2{
+    font-size: 64px;
+    font-weight: 300;
+}
+footer{
+    color: white;
+    background-color: #000;
+    text-align: center;
+    padding: 30px;
+    font-size: 30px;
+}
+@media (max-width: 786px){
+    .hero_section{
+        min-height: 50vh;
+        width: 100%;
+    }
+    .text_container{
+        padding: 10px 0;
+        text-align: center;
+    }
+    .lg_text{
+        font-size: 32px;
+    }
+    .black_box h2{
+        font-size: 24px;
+        
+    }
+    .black_box h2 span{
+        font-size: 32px;
+    }
+    .work{
+        
+        grid-template-columns: none;
+        grid-template-rows: auto;
+    }
+    .card{
+       
+        margin-top: 20px;
+     
+    }
+    .image_container img{
+        max-width: 420px;
+    }
+    .bottom_setion{
+        grid-template-columns: none;
+        grid-template-rows: auto auto;
+    }
+    .contact, .about{
+        min-height: 200px;
+        padding: 32px;
+        color: white;
+    }
+    .bottom_setion h2{
+        font-size: 32px;
+        
+    }
+}
